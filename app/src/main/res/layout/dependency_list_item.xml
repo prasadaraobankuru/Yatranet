@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="@dimen/activity_vertical_margin"
+        app:cardElevation="@dimen/activity_vertical_margin">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+
+            <ImageView
+                android:id="@+id/dev_image"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/no_image"
+                android:scaleType="centerCrop" />
+
+            <!-- Video Title -->
+            <TextView
+                android:id="@+id/devicename"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/dev_image"
+                android:layout_toRightOf="@id/dev_image"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:text="ignware_Sample.mp4"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ff01579b"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignTop="@id/dev_image"
+                android:layout_toRightOf="@id/devicename"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:text="type"
+                android:textStyle="bold"
+
+                android:textColor="#ff01579b"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/dev_image"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/dev_image"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="id"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/dev_image"
+                android:layout_marginTop="60dp"
+                android:layout_toRightOf="@id/dev_image"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:text="size"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+
+            <ImageView
+
+                android:id="@+id/dep_download"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/size"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="90dp"
+                android:src="@drawable/downloadnew"
+                android:text="fan"
+                android:textSize="10dp"
+
+
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

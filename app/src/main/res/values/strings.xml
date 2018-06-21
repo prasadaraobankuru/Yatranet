@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JobScheduler</string>
+    <string name="action_settings">Settings</string>
+    <string name="url">https://demo6977317.mockable.io/fetch_config</string>
+</resources>
